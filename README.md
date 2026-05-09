@@ -1,7 +1,7 @@
 # Wacca_x86-64
 ASM Source code and description for my patches!
 
-============= Description =============== <br>
+### ============= Description ===============
 This is a compilation of 2 different patches injected at different offsets <br>
 A special version of WaccaSongBrowser has beeen made to support these patches <br>
 
@@ -15,8 +15,8 @@ song UniqueID above 3999 are NOT shown in All songs category.
 (2) <br>
 Title Categories are all empty now, so you can fill them in with this mod :p (use ALL then Title to find a song by title) <br>
 bWaccaOriginal   => song category (for all diff) if not zero <br>
-CopyrightMessage => song category (for all diff) if not zero, regex ^([0-9]*).*$ <br>
-HashTag          => song category (for all diff) if not zero, regex ^([0-9]*).*$ <br>
+CopyrightMessage => song category (for all diff) if not zero, regex `^([0-9]*).*$` <br>
+HashTag          => song category (for all diff) if not zero, regex `^([0-9]*).*$` <br>
 WorkBuffer       => song category (for all diff) if not zero <br>
 bingo6 => song category for normal  if not zero <br>
 bingo7 => song category for hard    if not zero <br>
@@ -26,13 +26,13 @@ category is taken as modulo 256, and if it's superior to 61 it is skipped, so ga
 song UniqueID above 3999 are NOT shown in Grade category.
 
 
-; ================== (1) - asm source code ======================= <br>
-; v6 at 140498d10 in dissassembly => assemble
+### ================== (1) - asm source code =======================
+v6 at 140498d10 in dissassembly => assemble
 
-; ============================ (2) - asm source code ========================== <br>
-; v2 at 140498fb0 until 0x140499164 (do not touch xxx164)
+### ================== (2) - asm source code =======================
+v2 at 140498fb0 until 0x140499164 (do not touch xxx164)
 
-==================== Instructions ===================== <br>
+### ==================== Instructions =====================
 Compile my ASM Source code into bytecode using your favourite decompiler, <br>
 then inject the bytes at the specific offset in Mercury-Win64-Shipping.exe <br>
  <br>
