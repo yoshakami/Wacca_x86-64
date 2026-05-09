@@ -32,7 +32,7 @@ v6 at 140498d10 in dissassembly => assemble
 ### ================== (2) - asm source code =======================
 v2 at 140498fb0 until 0x140499164 (do not touch xxx164)
 
-==================== Instructions ===================== <br>
+### ==================== Instructions =====================
 Compile my ASM Source code into bytecode using your favourite decompiler, <br>
 then inject the bytes at the specific offset in Mercury-Win64-Shipping.exe <br>
  <br>
